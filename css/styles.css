@@ -851,6 +851,13 @@ figure {
   border-radius: 4px;
   padding-left: 30px;
 }
+.username-field:focus {
+  border: 1px solid var(--brand-color);
+  outline: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .username-field-textarea {
   width: 448px;
   height: 40px;
@@ -858,12 +865,21 @@ figure {
   border-radius: 4px;
   padding-left: 20px;
   padding-top: 10px;
+  resize: none;
+}
+.username-field-textarea:focus {
+  border: 1px solid var(--brand-color);
+  outline: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-username {
   position: absolute;
   top: 102px;
   left: 50px;
 }
+
 .icon-phone {
   position: absolute;
   top: 177px;
@@ -935,4 +951,10 @@ figure {
 .button-to-submit:hover,
 .button-to-submit:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+input:focus + svg {
+  fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
