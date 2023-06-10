@@ -737,7 +737,7 @@
                     height="24px"
                     class="icon-send"
                   >
-                    <use href="/images/icons2.svg#icon-icon-send"></use>
+                    <use href="/images/icons.svg#icon-icon-send"></use>
                   </svg>
                 </button>
               </div>
@@ -768,7 +768,7 @@
                 height="18px"
                 class="icon-username"
               >
-                <use href="/images/icons2.svg#icon-person-black"></use>
+                <use href="/images/icons.svg#icon-person-black"></use>
               </svg>
 
               <label for="phone-form" class="username-details">Telefon</label>
@@ -785,7 +785,7 @@
                 height="18px"
                 class="icon-phone"
               >
-                <use href="/images/icons2.svg#icon-phone-black"></use>
+                <use href="/images/icons.svg#icon-phone-black"></use>
               </svg>
               <label for="email-form" class="username-details">Email</label>
               <input
@@ -801,7 +801,7 @@
                 height="18px"
                 class="icon-email"
               >
-                <use href="/images/icons2.svg#icon-email-black"></use>
+                <use href="/images/icons.svg#icon-email-black"></use>
               </svg>
               <label for="comment-form" class="username-details"
                 >Komentarz
@@ -816,7 +816,29 @@
             </div>
             <div role="group" class="form-bottom-options">
               <div class="mandatory-check">
-                <input id="checkbox" type="checkbox" name="terms-and-policy" />
+                <input
+                  id="checkbox"
+                  type="checkbox"
+                  name="terms-and-policy"
+                  class="checkbox-empty-hidden"
+                  required
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16px"
+                  height="15px"
+                  class="unticked-icon"
+                >
+                  <use href="/images/icons.svg#icon-checkbox-unchecked"></use>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16px"
+                  height="15px"
+                  class="ticked-icon"
+                >
+                  <use href="/images/icons.svg#icon-checkbox-checked"></use>
+                </svg>
                 <label for="checkbox" class="terms-policy"
                   >Oświadczam iż akceptuję
                   <a href="#" class="terms">Regulamin</a> i
