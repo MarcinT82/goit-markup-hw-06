@@ -768,6 +768,7 @@ figure {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 15px;
+  color: var(--white);
 }
 .input-background:hover,
 .input-background:focus {
@@ -805,9 +806,6 @@ figure {
 .input-and-button {
   display: flex;
   gap: 15px;
-}
-.icons-bottom-container {
-  padding-right: 100px;
 }
 .view-form-first {
   display: flex;
@@ -960,31 +958,30 @@ figure {
   width: 16px;
   height: 15px;
   z-index: 2;
+  cursor: pointer;
 }
 .unticked-icon {
   position: absolute;
   left: 50px;
   bottom: 110px;
+  border-color: #212121;
   scale: 1;
-  transition: scale, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ticked-icon {
   position: absolute;
   left: 50px;
   bottom: 110px;
   fill: var(--brand-color);
-  border-radius: 2px;
+  border: none;
   visibility: hidden;
-  transition-property: background-color, visibility, scale;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   scale: 1;
+  transition: fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-empty-hidden:checked ~ .ticked-icon {
   visibility: visible;
   scale: 1;
 }
 .checkbox-empty-hidden:checked ~ .unticked-icon {
-  scale: 0;
+  scale: 1;
   visibility: hidden;
 }
